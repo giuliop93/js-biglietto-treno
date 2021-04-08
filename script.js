@@ -6,7 +6,7 @@ var età = parseInt(prompt("Quanti anni hai ?"));
 var prezzoAlKilometro = 0.21;
 var prezzoBigliettoSenzaSconto = prezzoAlKilometro * percorrenza;
 var scritto = "Il prezzo del biglietto è "
-var euro = " Euro"
+var euro = " €"
 console.log(prezzoBigliettoSenzaSconto);
 
 // 2 Il prezzo del biglietto è definito in base ai km (0.21 € al km),
