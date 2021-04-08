@@ -2,7 +2,7 @@
 // Sulla base di queste informazioni dovrà calcolare il prezzo totale del viaggio.
 
 var percorrenza = parseInt(prompt("Quanti chilometri vuoi percorrere ?"));
-var età = parseInt(prompt("Quanti anni hai ?"));
+var eta = parseInt(prompt("Quanti anni hai ?"));
 var prezzoAlKilometro = 0.21;
 var prezzoBigliettoSenzaSconto = prezzoAlKilometro * percorrenza;
 var scritto = "Il prezzo del biglietto è "
@@ -12,9 +12,9 @@ console.log(prezzoBigliettoSenzaSconto);
 // 2 Il prezzo del biglietto è definito in base ai km (0.21 € al km),
 // va applicato uno sconto del 20% per i minorenni e del 40% per gli over 65.
 
-if (età <= 18) {
+if (eta <= 18) {
  document.getElementById('costo').innerHTML = scritto + ((prezzoBigliettoSenzaSconto / 100) * 80) + euro;
-} else if (età >= 65) {
+} else if (eta >= 65) {
  document.getElementById('costo').innerHTML = scritto + ((prezzoBigliettoSenzaSconto / 100) * 60) + euro;
 } else {
  document.getElementById('costo').innerHTML = scritto + (prezzoBigliettoSenzaSconto) + euro;
